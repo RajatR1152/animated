@@ -216,23 +216,155 @@ svg {
     margin-top: -40%;
 }
 
-.cardInfo{
+.cardInfo {
     height: fit-content;
     margin: auto auto 30px auto;
     padding: 10px;
 }
 
-.cardTitle{
+.cardTitle {
     color: white;
     text-transform: capitalize;
     letter-spacing: 7px;
 }
 
-.btn{
+.btn {
     padding: 10px 15px;
     background-color: orange;
     color: white;
     font-size: 20px;
     border-radius: 30px;
     border: 0;
+}
+
+.thirdMobile {
+    display: none;
+}
+
+#mainImgMobile {
+    display: none;
+}
+
+#sliceMobile {
+    display: none;
+}
+
+#leaf1Mobile {
+    display: none;
+}
+
+@media only screen and (max-width:500px) {
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navs {
+        display: none;
+    }
+
+    .title {
+        font-size: 110px;
+    }
+
+    #main {
+        height: 100vh;
+    }
+
+    #mainImgMobile {
+        display: block;
+        width: 130%;
+        position: absolute;
+        top: 30%;
+        z-index: 1;
+    }
+
+    #mainImg,
+    #slice,
+    #leaf1 {
+        display: none;
+    }
+
+    #sliceMobile {
+        width: 30%;
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        z-index: 0;
+    }
+
+    #leaf1Mobile {
+        display: block;
+        position: absolute;
+    }
+
+    .third {
+        display: none;
+    }
+
+    .two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        z-index: 1;
+        text-align: center;
+        padding: 5px;
+    }
+
+
+    .thirdMobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 80px auto;
+    }
+
+    #fantaImgMobile {
+        width: 170%;
+        position: relative;
+        top: -55%;
+    }
+
+    .slice3 {
+        width: 60%;
+        position: relative;
+        margin-top: -30%;
+    }
+
+    .fantaCard{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 }

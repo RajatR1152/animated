@@ -10,13 +10,13 @@ var tl = gsap.timeline({
 tl.to("#mainImg", {
     top: "130%",
     left: "5%",
-    transform:'rotate(10deg)'
+    transform: 'rotate(10deg)',
 })
 
 tl.to("#slice", {
     top: "120%",
     left: "75%",
-    zIndex: 0
+    zIndex: 0,
 })
 
 tl.to("#leaf1", {
@@ -37,7 +37,7 @@ tl.to("#leaf2", {
 var tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".third",
-        start: "0% 95%",
+        start: "30% 95%",
         end: "70% 70%",
         scrub: true,
     }
@@ -72,14 +72,15 @@ tl2.from("#pepsiImg", {
 
 tl2.to("#mainImg", {
     top: "231%",
-    height:'450px',
+    height: '450px',
     left: "30%",
-    transform: 'rotate(0deg)'
+    transform: 'rotate(0deg)',
+    transition: 'width 5s'
 })
 
 tl.to("#slice", {
     top: "215%",
     left: "43%",
-    width:'230px'
+    width: '230px'
 })
 
